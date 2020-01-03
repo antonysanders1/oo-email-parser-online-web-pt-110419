@@ -22,10 +22,7 @@ class EmailAddressParser
     #binding.pry
     delimiters = [", ", /\s/]
     @@parser = @email_addresses.split(Regexp.union(delimiters))
-   
-   
-   
-   
+    @@parser.uniq
     
   end 
   
