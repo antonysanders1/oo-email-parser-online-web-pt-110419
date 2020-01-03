@@ -24,7 +24,7 @@ class EmailAddressParser
     @@parser = @email_addresses.split(Regexp.union(delimiters))
    
    
-   
+   .split(/[\s,][, ]/)
    
    
     
