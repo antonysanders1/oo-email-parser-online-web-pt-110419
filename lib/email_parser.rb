@@ -20,11 +20,11 @@ class EmailAddressParser
   
   def parse
     #binding.pry
-    #delimiters = [", ", /\s/]
-   # @@parser = @email_addresses.split(Regexp.union(delimiters))
+    delimiters = [", ", /\s/]
+    @@parser = @email_addresses.split(Regexp.union(delimiters))
    
    
-   @@parser = @email_addresses.split(/[\s, ][, ]/)
+   .split(/[\s,][, ]/)
    
    
     
